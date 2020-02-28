@@ -31,14 +31,22 @@ function clearIncomeFun(){//function to clear income input box
 
 
 function postErrorMessage(){
-    const newNode = document.createElement("h3");
+    const newNode = document.createElement("h3 id='errorMessage'");
     const newTextnode = document.createTextNode("Error: enter a number");
     newNode.appendChild(newTextnode);
     document.getElementById("messageArea").appendChild(newNode);
   }
 
 function removeErrorMessage(){
-    document.getElementById("messageArea").removeChild();
+    document.getElementById("messageArea").removeChild(1);
+
+    // 15% on the first $48,535 of taxable income, plus
+    // 20.5% on the next $48,534 of taxable income (on the portion of taxable income over 48,535 up to $97,069), plus
+    // 26% on the next $53,404 of taxable income (on the portion of taxable income over $97,069 up to $150,473), plus
+    // 29% on the next $63,895 of taxable income (on the portion of taxable income over 150,473 up to $214,368), plus
+    // 33% of taxable income over $214,368
+
+
 }
 
 
