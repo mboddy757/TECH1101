@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName"><br>
+        <input type="radio" id="republican" name="Party" value="republican">
+        <label for="republican">Republican</label><br>
+        <input type="radio" id="democratic" name="Party" value="democratic">
+        <label for="democratic">Democratic</label>
+    </form>
+<br>
+<form action="/action_page.php" target="_blank" method="GET">
+    <label for="thingname">Thing</label>
+    <input type="text" id="thingname" value="example">
+    <input type="submit" value="CLICK ME">
+</form>
+
+<form action="/action_blank.php" target="_blank" method="POST">
+    <label for="thingname">Thing</label>
+    <input type="text" id="thingname" value="example">
+    <input type="submit" value="CLICK ME">
+</form>
+<br>
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" value="Submit">
+    <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+  </form>
+<br>
+  <form action="/action_page.php">
+    <label for="email">Enter email address:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Check and submit">
+    <input type="submit" formnovalidate="formnovalidate" value="Just do it">
+  </form>
+
+</body>
+</html>
