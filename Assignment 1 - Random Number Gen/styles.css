@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding: 15%;
+  }
+  
+  h1,
+  h2,
+  label {
+    text-align: center;
+  }
+  
+  h1,
+  h2 {
+    padding-bottom: 20px;
+  }
+  
+  h1,
+  .display {
+    color: blue;
+  }
+  
+  label > input {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .display {
+    border: 1px solid blue;
+    padding: 5px;
+  }
+  
+  .action-buttons {
+    padding: 20px 0;
+  }
+  
